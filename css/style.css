@@ -5,8 +5,8 @@ body {
   background: #f4f4f4 url('http://backbonejs.org/docs/images/background.png') !important;
 }
 #logo {
-	float: left:
-	padding-right: 10px;
+	float: left !important:
+	padding-right: 10px !important;
 }
 header {
 	border: 0px;
