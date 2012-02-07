@@ -242,3 +242,11 @@ code, pre, tt {
   #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
 	font-weight: bold !important;
   }
+ 
+.run { 
+	position: absolute;
+	right: 15px;
+	width: 26px;
+	height: 18px;
+	background: url('docs/images/arrows.png') no-repeat -26px 0;
+}
