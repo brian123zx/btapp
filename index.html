@@ -6,17 +6,27 @@
 	<script src="http://jquery-json.googlecode.com/files/jquery.json-2.3.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.2.2/underscore-min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/jeromegn/DocumentUp/master/documentup.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://pwmckenna.com/css/backbone.css"></link>
+	<script src="https://raw.github.com/pwmckenna/btapp/master/backbone.btapp.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/tbranyen/DocumentUp/master/documentup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/backbone.css"></link>
     <script type="text/javascript">
-      DocumentUp.document({
-		name: "Backbone.btapp",
-		repo:  "pwmckenna/btapp",
-		twitter: "pwmckenna",
-		afterRender: function() {
-			alert('rendered');
+		DocumentUp.document({
+			name: "Backbone.btapp",
+			repo:  "pwmckenna/btapp",
+			twitter: "pwmckenna"
+		});
+		var attach_code_bindings = function () {
+			if($('#nav').length) {
+				jQuery("body").on("click", ".run", function() {
+					var cmd = $(this).next().next().text();
+					console.log('Executing: ' + cmd);
+					eval(cmd);
+				});
+			} else {
+				setTimeout(attach_code_bindings, 100);
+			}
 		}
-	});
+		attach_code_bindings();
     </script>
   </head>
   <body></body>
