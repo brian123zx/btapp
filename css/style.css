@@ -4,6 +4,10 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial !important;
   background: #f4f4f4 url('http://backbonejs.org/docs/images/background.png') !important;
 }
+#logo {
+	float: left:
+	padding-right: 10px;
+}
 header {
 	border: 0px;
 }
