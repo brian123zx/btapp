@@ -248,5 +248,5 @@ code, pre, tt {
 	right: 15px;
 	width: 26px;
 	height: 18px;
-	background: url('docs/images/arrows.png') no-repeat -26px 0;
+	background: url('../img/arrows.png') no-repeat -26px 0;
 }
