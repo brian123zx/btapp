@@ -10,9 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="http://pwmckenna.com/css/backbone.css"></link>
     <script type="text/javascript">
       DocumentUp.document({
-		name: "Backbone.Btapp",
+		name: "Backbone.btapp",
 		repo:  "pwmckenna/btapp",
-		twitter: "pwmckenna"
+		twitter: "pwmckenna",
+		afterRender: function() {
+			console.log('rendered');
+		}
 	});
     </script>
   </head>
